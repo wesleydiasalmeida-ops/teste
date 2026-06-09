@@ -1,0 +1,148 @@
+/* Configurações Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Container Centralizado */
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilização do Logo Tipo Google */
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+.g-blue { color: #4285F4; }
+.g-red { color: #EA4335; }
+.g-yellow { color: #FBBC05; }
+.g-green { color: #34A853; }
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #202124;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #202124;
+    margin-bottom: 30px;
+}
+
+/* Efeito Input Flutuante (Material Design) */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #1a73e8;
+    border-width: 2px;
+    padding: 15px; /* Ajuste para compensar a borda de 2px */
+}
+
+.input-group label {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 0 4px;
+    color: #5f6368;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+/* Move o label para cima quando o input ganha foco ou tem texto */
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+    top: 0;
+    font-size: 12px;
+    color: #1a73e8;
+}
+
+/* Links e Textos de Suporte */
+.helper-text {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.privacy-notice {
+    font-size: 14px;
+    color: #5f6368;
+    text-align: left;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+/* Área dos Botões */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1557b0;
+}
+
+/* Responsividade Básica */
+@media (max-width: 450px) {
+    .login-container {
+        border: none;
+        padding: 20px;
+    }
+}
